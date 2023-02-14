@@ -1,1 +1,8 @@
+# Add gitignore file itself
+.gitignore
+
+# Folders to ignore
 .devcontainer/*
+
+# Files to ignore
+tests.py
