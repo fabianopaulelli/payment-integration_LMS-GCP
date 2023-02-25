@@ -19,7 +19,7 @@ This is a project where a company, besides other services, created and provided 
 
 #### **Previous Architecture**
 <picture>
-[![](./img/architecture_1.drawio.svg)](#Previous-Architecture)
+<img src="./img/architecture_1.drawio.svg">
 </picture>
 
 #### **New Architecture**
