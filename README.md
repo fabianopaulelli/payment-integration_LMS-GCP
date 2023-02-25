@@ -18,10 +18,14 @@ This is a freela where a client wanted to change their e-Learning platform to an
 This is a project where a company, besides other services, created and provided specialized courses in an e-Learning platform for their target public. But in a moment in the past, they realized that they needed more than just a platform that provided courses. They wanted to have a platform that could track their student's progress, offer conclusion certificates, and other features that an e-Learning platform couldn't provide. So they decided to migrate to an LMS (Learning Management System), but at the same time, they still wanted to stick with the e-Learning platform to showcase the courses catalogs and the payment system.
 
 #### **Previous Architecture**
-<figure>
+<div>
+  <center>
+<picture>
 <img src="./img/architecture_1.drawio.svg">
-  <figcaption>test caption</figcaption>
-</figure>
+</picture>
+    Caption imag
+  </center>
+</div>
 
 #### **New Architecture**
 
