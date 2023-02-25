@@ -20,7 +20,7 @@ This is a project where a company, besides other services, created and provided 
 #### **Previous Architecture**
 <picture>
 <img src="./img/architecture_1.drawio.svg">
-  <figcaption>test caption</figcaption>
+  <caption>test caption</caption>
 </picture>
 
 #### **New Architecture**
