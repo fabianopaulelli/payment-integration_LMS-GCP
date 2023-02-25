@@ -22,6 +22,7 @@ This is a project where a company, besides other services, created and provided 
 <picture>
 <img src="./img/architecture_1.drawio.svg">
 </picture>
+  <br>
     Caption imag
 </div>
 
