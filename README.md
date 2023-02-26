@@ -1,22 +1,25 @@
 # **Integration between a Payment System and an LMS - A real-time solution using GCP**
 
 ## **Overview**
-This is a real freela where a client wanted to change their e-Learning platform to an LMS (Learning Management System). In general, e-Learning and LMS have the same purpose: to offer an environment to place course content (videos, audio, text, etc.), but the LMS has some extra resources, like gamification and so on. So they wanted me to integrate these two platforms, where the LMS will be the new course content platform, and the e-Learning platform will act as the payment system and the course catalog.
+This is a real-world project where a client wanted to change their e-Learning platform to an LMS (Learning Management System). In general, e-Learning and LMS have the same purpose: to offer an environment to place course content (videos, audio, text, etc.), but the LMS has some extra resources, like gamification and so on. So they wanted me to integrate these two platforms, where the LMS will be the new course content platform, and the e-Learning platform will act as the payment system and the course catalog.
 
 
-> So, the idea here is to create a fictitious scenario based on this real project, where a client will allow us to use GCP (Google Cloud Platform) to integrate these two platforms, which should be real-time and create a relational database using BigQuery to feed a dashboard to track revenue. We're going to work with these skills in this project: 
-> - Data Architect: By designing the architecture of the integration using GCP
-> - Data Engineer: By implementing the architecture designed, setup a NoSQL database, a data warehouse and works with the streaming data
+> So, the idea here is to create a fictitious scenario based on this real-world project, where a client will allow us to use GCP (Google Cloud Platform) to integrate these two platforms, which should be real-time and create a relational database using BigQuery to feed a dashboard to track revenue. We're going to work with these skills in this project: 
+> - Cloud Architect: By designing the architecture of the integration using GCP
+> - Data Engineer: By implementing the architecture designed, set up a NoSQL database and a data warehouse and works with the streaming data
 > - Data Analyst: By creating a dashboard to track the revenue of the courses
 
 ## **Tech Stack**
-We're going to use Google Cloud to build up this integration. So we need a NoSQL database to store the student data as expiration time, 
+Here are some of the frameworks that we will use in this project:
 
-|  | GCP Stack  | 
-| --- | --- |
-| <picture><img src="./img/firestore.svg"></picture> | Google Firestore |
-| <picture><img src="./img/cloud_functions.svg"></picture> | Google Cloud Function |
-| <picture><img src="./img/pubsub.svg"></picture> | Google Cloud Pub/Sub |
+|  | Framework  | Description |
+| --- | --- | --- |
+| <picture><img src="./img/firestore.svg"></picture> | Google Firestore | NoSQL database |
+| <picture><img src="./img/cloud_functions.svg"></picture> | Google Cloud Function | Endpoint for webhooks \| Security lawyer for data delivery |
+| <picture><img src="./img/pubsub.svg"></picture> | Google Pub/Sub | Message queue to guarantee proper delivery |
+| <picture><img src="./img/bigquery.svg"></picture> | BigQuery | Relational database |
+| <picture><img src="./img/webhooks.svg" width="25" height="25"></picture> | Webhooks    | Real-time event delivery
+| <picture><img src="./img/fastapi.svg" width="26" height="25"></picture> | FastAPI    | To create the API that will allow end-users to manipulate the courses link between the two platforms
 
 
 ## **Context**
@@ -67,6 +70,19 @@ By now, knowing that the platforms have ways to communicate with each other, we 
 
 ## **Architecture**
 
-## **Things to consider**
+<p align="center" width="100%">
+<picture>
+    <source srcset="./img/integration_architecture.drawio.svg" type="image/svg+xml">
+    <img id="Figure-1" src="./img/integration_architecture.drawio.svg" alt="Hotmart Architecture">
+</picture>
+    <br><sub>
+        Figure 2: How the systems will be detached from each other in the new architecture
+    </sub>
+</p>
+
+<br><br>
+
+
+## **Business Considerations**
 
 Let's now think about the business rules. If the client only sells lifetime access courses, we finish our work here and just need to start the implementation. But if the client sells courses with a recurrence payment, we need to consider that the student should only have access to the course if they pay on time. So we must check if the student pays on time, and we can do that with the help of the webhook events. Or another scenario, where the course has not lifetime access, we need to block the student after a stipulated period.
