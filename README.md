@@ -9,8 +9,12 @@ This is a real-world project where a client wanted to change their e-Learning pl
 > - Data Engineer: By implementing the architecture designed, set up a NoSQL database and a data warehouse and works with the streaming data
 > - Data Analyst: By creating a dashboard to track the revenue of the courses
 
+## **Considerations**
+When we come up with a solution, it doesn't matter if it's a technology or other area problem; we should always analyze business requirements first. Not only that, we should link if the framework that will be used, if any, is the ideal one. For example, if it's a data problem, we should ask: how large is the data we are dealing with?
+So for this problem, we will consider it a small-medium size company, so it should not be a big deal when we talk about scalability.  
+
 ## **Tech Stack**
-Here are some of the frameworks that we will use in this project:
+Here are some of the frameworks that we will use in this project. Of course it may looks like overengineering, but the idea here is to show how we can use these frameworks to solve a real-world problem.
 
 |  | Framework  | Description |
 | --- | --- | --- |
