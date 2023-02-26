@@ -21,7 +21,7 @@ Here are some of the frameworks that we will use in this project:
 | <picture><img src="./img/cloud_composer.svg"></picture> | Cloud Composer | Fully manage Airflow Environment in GCP  |
 | <picture><img src="./img/webhooks.svg" width="25" height="25"></picture> | Webhooks    | Real-time event delivery
 | <picture><img src="./img/fastapi.svg" width="26" height="25"></picture> | FastAPI    | To create the API that will allow end-users to manipulate the courses link between the two platforms
-| <picture><img src="./img/airflow.png" width="15%" height="15%"></picture> | Airflow    | Data orchestration framework that will be used to run scheduled checks the expiration date of the courses as well update the revenue in the BigQuery 
+| <picture><img src="./img/airflow.png" width="20" height="20"></picture> | Airflow    | Data orchestration framework that will be used to run scheduled checks the expiration date of the courses as well update the revenue in the BigQuery 
 
 
 ## **Context**
