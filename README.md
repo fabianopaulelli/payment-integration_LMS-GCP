@@ -24,9 +24,9 @@ Here are some of the frameworks that we will use in this project. Of course it m
 | <picture><img src="./img/bigquery.svg"></picture> | BigQuery | Relational database |
 | <picture><img src="./img/cloud_composer.svg"></picture> | Cloud Composer | Fully manage Airflow Environment in GCP  |
 | <picture><img src="./img/webhooks.svg" width="25" height="25"></picture> | Webhooks    | Real-time event delivery
-| <picture><img src="./img/fastapi.svg" width="26" height="25"></picture> | FastAPI    | To create the API that will allow end-users to manipulate the courses link<br> between the two platforms
-| <picture><img src="./img/airflow.svg" width="20" height="20"></picture> | Airflow    | To orchestrate scheduled checks in the expiration date of the courses as well update the revenue in the BigQuery 
-
+| <picture><img src="./img/fastapi.svg" width="26" height="25"></picture> | FastAPI    | API to allow end-users to manipulate the courses link between platforms
+| <picture><img src="./img/airflow.svg" width="20" height="20"></picture> | Airflow    | Scheduled checks in the expiration date and update BigQuery tables
+| <picture><img src=""></picture> |    | 
 
 ## **Context**
 A company, besides other services, creates and provides specialized courses in an e-Learning platform for their target public. But now, they realize they need more than just a platform that provides lessons. They want a platform to track students' progress, offer conclusion certificates, and other features that an e-Learning platform can't provide. 
